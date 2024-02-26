@@ -1,3 +1,4 @@
+import 'package:first_exam_app/cartscreen.dart';
 import 'package:first_exam_app/home.dart';
 import 'package:first_exam_app/product.dart';
 import 'package:first_exam_app/secondscreen.dart';
@@ -17,9 +18,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/home',
       routes: {
-        '/home' : (context) => HomeScreen(),
-        '/second' : (context) => SecondScreen(),
-        '/product' : (context) => ProductScreen(),
+        '/home' : (context) => const HomeScreen(),
+        '/second' : (context) => const SecondScreen(),
+        '/product' : (context) => const ProductScreen(),
+        '/cart' : (context) => const CartScreen(),
       },
     );
   }
